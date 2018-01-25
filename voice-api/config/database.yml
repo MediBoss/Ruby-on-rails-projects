@@ -1,24 +1,24 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: voicey_development
+  database: voice-api-development
   pool: 5
-  username: postgres
-  password: postgres
+  username: yveslym
+  password:
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: voicey_test
+  database: voice-api-test
   pool: 5
-  username: postgres
-  password: postgres
+  username: yveslym
+  password:
 
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: voicey_production
+  database: voice-api-production
   pool: 5
-  username: postgres
-  password: postgres
+  username: yveslym
+  password:
