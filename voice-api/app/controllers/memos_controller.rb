@@ -16,7 +16,8 @@ class MemosController < ApplicationController
   # POST /memos
   def create
     @memo = Memo.new(memo_params)
-
+    # Add the current logged in user as the creator of the memo
+    @memo.user = current_user
     if @memo.save
       render json: @memo, status: :created, location: @memo
     else
@@ -27,6 +28,7 @@ class MemosController < ApplicationController
   # PATCH/PUT /memos/1
   def update
     if @memo.update(memo_params)
+
       render json: @memo
     else
       render json: @memo.errors, status: :unprocessable_entity
@@ -46,6 +48,6 @@ class MemosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def memo_params
-      params.fetch(:memo, {})
+      params.permit(:date, :title, :body_text)
     end
 end
