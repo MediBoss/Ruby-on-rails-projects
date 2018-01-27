@@ -48,6 +48,6 @@ class MemosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def memo_params
-      params.permit(:date, :title, :body_text)
+params.permit(:voice_file, :title, :text_body, :date)
     end
 end
