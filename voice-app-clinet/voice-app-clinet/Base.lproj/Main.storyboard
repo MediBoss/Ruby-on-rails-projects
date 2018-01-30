@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Noteworthy.ttc">
+            <string>Noteworthy-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,9 +29,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cqx-fK-fnZ" userLabel="tittleView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C19-Ne-IPd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C19-Ne-IPd">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -41,15 +46,20 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-wg-fYJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-Ud-he0" userLabel="usernameInput">
-                                                                <rect key="frame" x="139" y="25" width="97" height="30"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-Ud-he0" userLabel="usernameInput">
+                                                                <rect key="frame" x="45" y="25" width="285" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="0bO-Ud-he0" firstAttribute="leading" secondItem="6sK-wg-fYJ" secondAttribute="leading" constant="45" id="DJ9-ac-8hx"/>
+                                                            <constraint firstAttribute="bottom" secondItem="0bO-Ud-he0" secondAttribute="bottom" constant="25" id="JHB-7n-fQh"/>
+                                                            <constraint firstItem="0bO-Ud-he0" firstAttribute="top" secondItem="6sK-wg-fYJ" secondAttribute="top" constant="25" id="U2U-O4-EPL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0bO-Ud-he0" secondAttribute="trailing" constant="45" id="sgH-qP-qhy"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -59,15 +69,20 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-DC-uJH">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-TG-XaW" userLabel="passwordInput">
-                                                                <rect key="frame" x="139" y="25.5" width="97" height="30"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEf-EK-rEd" userLabel="passwordInput">
+                                                                <rect key="frame" x="45" y="25.5" width="285" height="30"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="cEf-EK-rEd" secondAttribute="trailing" constant="45" id="DRP-VN-dRK"/>
+                                                            <constraint firstItem="cEf-EK-rEd" firstAttribute="leading" secondItem="uiT-DC-uJH" secondAttribute="leading" constant="45" id="aFV-mn-eXg"/>
+                                                            <constraint firstAttribute="bottom" secondItem="cEf-EK-rEd" secondAttribute="bottom" constant="25" id="pSS-Kf-frI"/>
+                                                            <constraint firstItem="cEf-EK-rEd" firstAttribute="top" secondItem="uiT-DC-uJH" secondAttribute="top" constant="25" id="zGK-et-kDR"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                             </stackView>
@@ -78,10 +93,12 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wye-eU-aYB" userLabel="signInButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Sign in"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWx-wQ-Uke" userLabel="signUpButton">
                                                 <rect key="frame" x="0.0" y="81" width="375" height="81"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Sign Up"/>
                                             </button>
                                         </subviews>
