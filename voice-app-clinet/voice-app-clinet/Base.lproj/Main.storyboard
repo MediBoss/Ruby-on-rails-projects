@@ -18,16 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZLu-QA-CS9" userLabel="mainStackView">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vLk-aJ-sSk" userLabel="mainStackView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cqx-fK-fnZ" userLabel="tittleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-w2-wbd" userLabel="inputView">
+                                        <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yEQ-NY-IQE" userLabel="buttonsView">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="162"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lii-6R-qU5" userLabel="forgotPasswordView">
+                                        <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                                    </stackView>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZLu-QA-CS9" secondAttribute="bottom" id="4Od-bp-Bl3"/>
-                            <constraint firstItem="ZLu-QA-CS9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JAM-l0-Zio"/>
-                            <constraint firstItem="ZLu-QA-CS9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OKW-Be-PgF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLu-QA-CS9" secondAttribute="trailing" id="Y9d-p3-kPc"/>
+                            <constraint firstItem="vLk-aJ-sSk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9q0-eQ-NDd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vLk-aJ-sSk" secondAttribute="bottom" id="Pao-m3-qPS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vLk-aJ-sSk" secondAttribute="trailing" id="ZyZ-VU-FRx"/>
+                            <constraint firstItem="vLk-aJ-sSk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ec9-Z9-sy7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
