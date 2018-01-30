@@ -64,6 +64,12 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lii-6R-qU5" userLabel="forgotPasswordView">
                                         <rect key="frame" x="0.0" y="485.5" width="375" height="161.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL1-mo-JAb">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                                <state key="normal" title="Forgot Password ?"/>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
