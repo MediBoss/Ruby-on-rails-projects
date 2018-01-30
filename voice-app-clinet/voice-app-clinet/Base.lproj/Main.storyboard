@@ -160,6 +160,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL1-mo-JAb">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <state key="normal" title="Forgot Password ?">
                                                     <color key="titleColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
