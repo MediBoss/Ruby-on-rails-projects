@@ -137,7 +137,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="57.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IS-Ub-jpN" userLabel="signInButton">
-                                                                <rect key="frame" x="88" y="7" width="144" height="43.5"/>
+                                                                <rect key="frame" x="88" y="7" width="144" height="43"/>
                                                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                                 <state key="normal" title="Sign up">
