@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20552BE32023B36F00CC16C4 /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDD2023B36F00CC16C4 /* Message+CoreDataClass.swift */; };
+		20552BE42023B36F00CC16C4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDE2023B36F00CC16C4 /* User+CoreDataProperties.swift */; };
+		20552BE52023B36F00CC16C4 /* MessengerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDF2023B36F00CC16C4 /* MessengerModel.xcdatamodeld */; };
+		20552BE62023B36F00CC16C4 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BE12023B36F00CC16C4 /* Message+CoreDataProperties.swift */; };
+		20552BE72023B36F00CC16C4 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BE22023B36F00CC16C4 /* User+CoreDataClass.swift */; };
+		20552BEB2023B46300CC16C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BEA2023B46300CC16C4 /* LoginViewController.swift */; };
+		20552BEE2023B49800CC16C4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BED2023B49800CC16C4 /* CoreDataStack.swift */; };
 		2081233F201E5D9D000366AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081233E201E5D9D000366AC /* AppDelegate.swift */; };
 		20812341201E5D9D000366AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20812340201E5D9D000366AC /* ViewController.swift */; };
 		20812344201E5D9D000366AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20812342201E5D9D000366AC /* Main.storyboard */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20552BDD2023B36F00CC16C4 /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20552BDE2023B36F00CC16C4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20552BE02023B36F00CC16C4 /* MessengerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessengerModel.xcdatamodel; sourceTree = "<group>"; };
+		20552BE12023B36F00CC16C4 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		20552BE22023B36F00CC16C4 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		20552BEA2023B46300CC16C4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "UI/View Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
+		20552BED2023B49800CC16C4 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		2081233B201E5D9D000366AC /* voice-app-clinet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "voice-app-clinet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2081233E201E5D9D000366AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20812340201E5D9D000366AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +60,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20552BDC2023B33D00CC16C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20552BDD2023B36F00CC16C4 /* Message+CoreDataClass.swift */,
+				20552BE12023B36F00CC16C4 /* Message+CoreDataProperties.swift */,
+				20552BDF2023B36F00CC16C4 /* MessengerModel.xcdatamodeld */,
+				20552BE22023B36F00CC16C4 /* User+CoreDataClass.swift */,
+				20552BDE2023B36F00CC16C4 /* User+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20552BE82023B3BD00CC16C4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				20552BE92023B3CC00CC16C4 /* View Controllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		20552BE92023B3CC00CC16C4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20552BEA2023B46300CC16C4 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		20552BEC2023B47700CC16C4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				20552BED2023B49800CC16C4 /* CoreDataStack.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		20812332201E5D9C000366AC = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +117,10 @@
 		2081233D201E5D9D000366AC /* voice-app-clinet */ = {
 			isa = PBXGroup;
 			children = (
+				20552BEC2023B47700CC16C4 /* Services */,
+				20552BE82023B3BD00CC16C4 /* UI */,
+				20552BDC2023B33D00CC16C4 /* Models */,
 				20812351201E5EB3000366AC /* Networking */,
-				20812350201E5DEF000366AC /* UI */,
 				2081233E201E5D9D000366AC /* AppDelegate.swift */,
 				20812340201E5D9D000366AC /* ViewController.swift */,
 				20812342201E5D9D000366AC /* Main.storyboard */,
@@ -79,14 +131,6 @@
 			path = "voice-app-clinet";
 			sourceTree = "<group>";
 		};
-		20812350201E5DEF000366AC /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				20812352201E6055000366AC /* View Controllers */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		20812351201E5EB3000366AC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,13 +139,6 @@
 				20C90815201E73630070FEE4 /* ClientManager.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		20812352201E6055000366AC /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		A22A27A19967F280ECF0654F /* Frameworks */ = {
@@ -257,8 +294,15 @@
 				20C90814201E73440070FEE4 /* NetworkAdaptor.swift in Sources */,
 				20C90812201E73280070FEE4 /* Route.swift in Sources */,
 				20812341201E5D9D000366AC /* ViewController.swift in Sources */,
+				20552BEE2023B49800CC16C4 /* CoreDataStack.swift in Sources */,
+				20552BE42023B36F00CC16C4 /* User+CoreDataProperties.swift in Sources */,
+				20552BE72023B36F00CC16C4 /* User+CoreDataClass.swift in Sources */,
+				20552BE32023B36F00CC16C4 /* Message+CoreDataClass.swift in Sources */,
+				20552BE62023B36F00CC16C4 /* Message+CoreDataProperties.swift in Sources */,
+				20552BE52023B36F00CC16C4 /* MessengerModel.xcdatamodeld in Sources */,
 				2081233F201E5D9D000366AC /* AppDelegate.swift in Sources */,
 				20C90816201E73630070FEE4 /* ClientManager.swift in Sources */,
+				20552BEB2023B46300CC16C4 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20552BDF2023B36F00CC16C4 /* MessengerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20552BE02023B36F00CC16C4 /* MessengerModel.xcdatamodel */,
+			);
+			currentVersion = 20552BE02023B36F00CC16C4 /* MessengerModel.xcdatamodel */;
+			path = MessengerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 20812333201E5D9C000366AC /* Project object */;
 }

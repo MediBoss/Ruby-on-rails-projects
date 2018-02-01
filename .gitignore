@@ -21,8 +21,8 @@ build/
 build-iPhoneOS/
 build-iPhoneSimulator/
 
-voice-app-clinet/.DS_Store
-
+/voice-app-clinet/.DS_Store
+/voice-app-clinet/voice-app-clinet/.DS_Store
 ## Specific to RubyMotion (use of CocoaPods):
 #
 # We recommend against adding the Pods directory to your .gitignore. However
