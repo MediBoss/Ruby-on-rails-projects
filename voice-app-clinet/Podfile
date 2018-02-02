@@ -6,6 +6,8 @@ target 'voice-app-clinet' do
   use_frameworks!
 
   # Pods for voice-app-clinet
-pod 'Moya', '~> 10.0'
-
+#pod 'Moya', '~> 10.0'
+pod 'Kingfisher'
+pod 'Moya-ModelMapper'
+pod 'SAMKeychain', '~> 1.5'
 end
