@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     // - MARK: IBACTIONS
     @IBAction func loginButtonTapped(_ sender: Any){
         
+        guard let email = email.text, let password = password.text else {return}
+        
     }
     
     @IBAction func registerButtonTapped(_ sender: Any){
