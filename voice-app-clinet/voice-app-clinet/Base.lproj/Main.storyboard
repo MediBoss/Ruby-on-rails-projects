@@ -201,7 +201,7 @@
         <!--signupViewController-->
         <scene sceneID="X2e-X8-7kg">
             <objects>
-                <viewController id="FeG-N8-6Sj" userLabel="signupViewController" sceneMemberID="viewController">
+                <viewController id="FeG-N8-6Sj" userLabel="signupViewController" customClass="SignUpViewController" customModule="voice_app_clinet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aCd-8d-M2I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,7 +348,7 @@
                                                         <rect key="frame" x="0.0" y="0.33333333333331439" width="375" height="80.666666666666671"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wi0-hO-7Vo" userLabel="UsernameField">
-                                                                <rect key="frame" x="37.666666666666657" y="17.333333333333311" width="300" height="48.666666666666657"/>
+                                                                <rect key="frame" x="37.666666666666657" y="16.666666666666682" width="300" height="48.666666666666657"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -478,6 +478,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yKJ-YN-RnR"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="A6b-8q-Zry" id="ajU-iz-IOv"/>
+                        <outlet property="passwordTextField" destination="7Tr-kq-4aN" id="UZF-Ni-l0g"/>
+                        <outlet property="registerButton" destination="Lum-PD-7yA" id="K3L-Nf-aSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-hG-YWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
