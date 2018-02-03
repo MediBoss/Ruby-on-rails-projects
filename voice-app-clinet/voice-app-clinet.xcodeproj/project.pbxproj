@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202BCFD02026480A00F5B729 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202BCFCF2026480A00F5B729 /* Extensions.swift */; };
 		20552BE32023B36F00CC16C4 /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDD2023B36F00CC16C4 /* Message+CoreDataClass.swift */; };
 		20552BE42023B36F00CC16C4 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDE2023B36F00CC16C4 /* User+CoreDataProperties.swift */; };
 		20552BE52023B36F00CC16C4 /* MessengerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20552BDF2023B36F00CC16C4 /* MessengerModel.xcdatamodeld */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		202BCFCF2026480A00F5B729 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		20552BDD2023B36F00CC16C4 /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
 		20552BDE2023B36F00CC16C4 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		20552BE02023B36F00CC16C4 /* MessengerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessengerModel.xcdatamodel; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				20552BED2023B49800CC16C4 /* CoreDataStack.swift */,
+				202BCFCF2026480A00F5B729 /* Extensions.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				20C90816201E73630070FEE4 /* ClientManager.swift in Sources */,
 				6787FFA120241A19008786D3 /* SignUpViewController.swift in Sources */,
 				20552BEB2023B46300CC16C4 /* LoginViewController.swift in Sources */,
+				202BCFD02026480A00F5B729 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
