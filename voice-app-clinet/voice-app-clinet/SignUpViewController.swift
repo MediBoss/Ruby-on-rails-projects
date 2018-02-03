@@ -33,7 +33,7 @@ class SignUpViewController: UIViewController {
     
     
     // - MARK: METHODS
-    
+    /*
     func verifyPassword(password: String, confirmPassword: String) -> Bool{
         
         if(password != confirmPassword){
@@ -42,6 +42,7 @@ class SignUpViewController: UIViewController {
         }
         
     }
+ */
     
     // - MARK - VIEW CONTROLLER LIFE CYCLE
     
