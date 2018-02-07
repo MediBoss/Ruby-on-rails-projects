@@ -11,6 +11,8 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     // - MARK: IBOUTLET
+    
+    
     @IBOutlet weak var firstNameTextField : UITextField!
     @IBOutlet weak var lastNameTextField : UITextField!
     
@@ -30,7 +32,6 @@ class SignUpViewController: UIViewController {
         
         
     }
-    
     
     // - MARK: METHODS
     
