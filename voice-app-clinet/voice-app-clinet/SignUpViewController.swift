@@ -11,6 +11,8 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     // - MARK: IBOUTLET
+    
+    
     @IBOutlet weak var firstNameTextField : UITextField!
     @IBOutlet weak var lastNameTextField : UITextField!
     
@@ -31,7 +33,6 @@ class SignUpViewController: UIViewController {
         
     }
     
-    
     // - MARK: METHODS
     
     func verifyPassword() -> Bool{
@@ -51,7 +52,12 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Register"   // Puts a title on top of this view controller
+        
+        // Unables the view controller so that user will not register until the passcodes match
         self.registerButton.isEnabled = false
+        
         confirmPasswordTextField.delegate = self
         self.registerButton.alpha = 0.5
         //passwordTextField.delegate = self
