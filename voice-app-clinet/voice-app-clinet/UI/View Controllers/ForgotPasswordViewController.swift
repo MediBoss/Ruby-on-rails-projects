@@ -8,18 +8,12 @@
 
 import UIKit
 
-
-
-
-
-
-
 class ForgotPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Change Password" // The title on top of the view controller
-
+self.dismissKeyboard()
         // Do any additional setup after loading the view.
     }
 

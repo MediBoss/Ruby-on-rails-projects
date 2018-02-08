@@ -8,10 +8,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, messengerDelegate {
 
     // - MARK: PROPERTIES
-    var currentUser = CoreDataStack.singletonInstance
+    var stack = CoreDataStack.singletonInstance
+    var delegate : messengerDelegate!
     
     // - MARK: IBOUTLETS
     @IBOutlet weak var email: UITextField!
@@ -22,9 +23,27 @@ class LoginViewController: UIViewController {
         
         guard let email = email.text, let password = password.text else {return}
         
-    }
-    
-    @IBAction func registerButtonTapped(_ sender: Any){
+        let manager = MessengerMananger()
+        
+        
+        manager.login(email: email, password: password, success: { (user) in
+            self.stack.saveTo(context: self.stack.viewContext)
+            
+            UserDefaults.standard.set(true, forKey: "everlogin")
+            
+            self.performSegue(withIdentifier: "main", sender: nil)
+            
+        }, error: { (error) in
+            
+        }) { (code) in
+            switch code{
+            case 400?:
+                self.delegate.alertMessage(title: "bad login", message: "check your email and password")
+                
+            default:
+                print("boummerr")
+            }
+        }
         
     }
     
@@ -39,8 +58,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {

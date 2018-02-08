@@ -11,11 +11,21 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    
+    
     var window: UIWindow?
 
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        if UserDefaults.standard.bool(forKey: "everlogin"){
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainVC = storyboard.instantiateViewController(withIdentifier: "main")
+            UIApplication.shared.keyWindow?.rootViewController?.present(mainVC, animated: true, completion: nil)
+
+        }
+        
         return true
     }
 
