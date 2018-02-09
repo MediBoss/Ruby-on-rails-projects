@@ -122,6 +122,9 @@
                                                                 <variation key="heightClass=compact-widthClass=compact">
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 </variation>
+                                                                <connections>
+                                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJ2-0U-lfz"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -183,7 +186,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="TF5-oD-zAE" kind="show" id="2V2-u1-tAy"/>
+                                                    <segue destination="TF5-oD-zAE" kind="show" identifier="main" id="2V2-u1-tAy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -205,6 +208,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="I3z-Tk-afC"/>
+                    <connections>
+                        <outlet property="email" destination="0bO-Ud-he0" id="ufn-fb-5Ne"/>
+                        <outlet property="password" destination="cEf-EK-rEd" id="QJD-zO-hZ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +327,7 @@
                                                         <rect key="frame" x="0.0" y="0.33333333333331439" width="375" height="80.666666666666671"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIZ-Hg-gLR" userLabel="usernameInput">
-                                                                <rect key="frame" x="56.666666666666657" y="16.666666666666689" width="262.66666666666674" height="48.333333333333343"/>
+                                                                <rect key="frame" x="56.666666666666657" y="16.333333333333318" width="262.66666666666674" height="48.333333333333343"/>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -468,6 +475,7 @@
                         <outlet property="passwordTextField" destination="7aS-hw-LqH" id="Oor-dd-NFU"/>
                         <outlet property="registerButton" destination="Lum-PD-7yA" id="Kj6-cL-G8q"/>
                         <outlet property="userNameTextField" destination="lIZ-Hg-gLR" id="QYp-mc-v4I"/>
+                        <segue destination="bvO-mI-Wuq" kind="show" identifier="main" id="vnr-jC-VP2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-hG-YWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -477,7 +485,7 @@
         <!--forgotPasswordViewController-->
         <scene sceneID="RKy-7a-a1i">
             <objects>
-                <viewController id="TF5-oD-zAE" userLabel="forgotPasswordViewController" customClass="ForgotPasswordViewController" customModule="voice_app_clinet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" id="TF5-oD-zAE" userLabel="forgotPasswordViewController" customClass="ForgotPasswordViewController" customModule="voice_app_clinet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tnr-d9-izI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -543,7 +551,6 @@
         <image name="img" width="1000" height="1492"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XI1-dk-R7b"/>
         <segue reference="2V2-u1-tAy"/>
         <segue reference="ala-B4-pfR"/>
     </inferredMetricsTieBreakers>

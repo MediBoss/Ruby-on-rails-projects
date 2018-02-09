@@ -5,7 +5,7 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="messages" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="User" representedClassName="User" syncable="YES">
+    <entity name="User" representedClassName=".User" syncable="YES">
         <attribute name="authentification" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,7 +15,7 @@
         <relationship name="messages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Message" inverseName="user" inverseEntity="Message" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-290" positionY="-18" width="128" height="148"/>
         <element name="Message" positionX="-54" positionY="9" width="128" height="90"/>
+        <element name="User" positionX="-290" positionY="-18" width="128" height="150"/>
     </elements>
 </model>
