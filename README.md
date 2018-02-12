@@ -1,3 +1,6 @@
 # Voice App
+## </br>CORE CONCEPT</br>
+## DEVELOPERS
 
-## </br>Core Conceptt</br>
+* Yves Songolo (Full stack iOS Dev): Author of The app and Backend developer (Ruby on Rails)
+* Medi Assumani (Junior iOS Dev): Front End developer (Swift and iOS)
