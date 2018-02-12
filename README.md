@@ -13,7 +13,7 @@
 
 ## TODO
 
-* Yves :
+* <i>Yves</i> :
 
   * Create the app's API
   * Connect the login and sign up page to th eserver
@@ -21,4 +21,9 @@
 
 
 
-* Medi : 
+* <i>Medi</i> : 
+ 
+ 
+   * Design Login and Sign Up page
+   * Integrate AutoLayout 
+   * Handling user-trigered events
