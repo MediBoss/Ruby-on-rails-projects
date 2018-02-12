@@ -18,12 +18,14 @@
   * Create the app's API
   * Connect the login and sign up page to th eserver
   * Create and upload the app's server
+  * Implemented the User file
 
 
 
 * <i>Medi</i> : 
  
  
-   * Design Login and Sign Up page
+   * Design Login, Sign Up , and forgot Password page
    * Integrate AutoLayout 
    * Handling user-trigered events
+   * Designed the GUI
