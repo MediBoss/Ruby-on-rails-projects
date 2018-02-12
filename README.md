@@ -15,6 +15,10 @@
 
 * Yves :
 
+  * Create the app's API
+  * Connect the login and sign up page to th eserver
+  * Create and upload the app's server
+
 
 
 * Medi : 
